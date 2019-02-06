@@ -1,7 +1,7 @@
 title: sjcswank
 logo: /sjcswank.github.io/images/12241586_658895782136_8060150395707293368_n.jpg 
 description: Developer in Development
-show_downloads: true
+show_downloads: false
 google_analytics:
 theme: jekyll-theme-minimal
 #
