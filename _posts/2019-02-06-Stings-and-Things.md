@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 ## Strings and Things
 
