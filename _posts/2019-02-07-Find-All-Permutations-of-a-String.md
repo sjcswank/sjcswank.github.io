@@ -132,4 +132,4 @@ There is a great [article](https://javaconceptoftheday.com/permutations-of-strin
 
 Now that we have found all the permutations of any given string, we can start to look at finding all combinations of a string. The two will set us up nicely for the game challenge as we progress. Remember to check back for the rest of the [Strings and Things](https://sjcswank.github.io/Stings-and-Things/) solutions soon. For now, pat yourself on the back- this post covers some heavy material and you made all the way through!
 
-
+Thanks for reading, and happy coding!
