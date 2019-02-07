@@ -79,8 +79,8 @@ Let's walk through this function with 5 as int n.
     	return(n * factorial(n-1));  //return(1 * factorial(1-1))  
  	}  
     
-**The return of each function call is as follows:
-	5  (5-1)  (4-1)  (3-1)  (2-1)  (1)**
+The input return of each function call is as follows:
+	5  (5-1)  (4-1)  (3-1)  (2-1)  (1) return 1 x 1 x 2 x 3 x 4 x 5 = 120
 
 We now know how to find the _number_ of permutations, next we can use this knowledge to find the actual permutations themselves. 
 
@@ -120,3 +120,16 @@ Let's walkthrough this one concept at a time again:
         }
     }
     
+The input and return of each function call with "ABC" as String input:
+("", "ABC"), ("A", "BC"), ("AB", "C"), ("ABC", "") **return "ABC"** 
+("AC", "B"), ("ACB", "") **return "ACB"**
+("B", "AC"), ("BA", "C"), ("BAC", "") **return "BAC"**
+("BC", "A"), ("BCA", "") **return "BCA"**
+("C", "AB"), ("CA", "B") ("CAB", "") **return "CAB"**
+("CB", "A"), ("CBA", ""), **return "CBA"**
+
+There is a great [article](https://javaconceptoftheday.com/permutations-of-string-in-java-recursively/) on [Java Concept of the Day](https://javaconceptoftheday.com/) that goes through the code more indepth. It also shows a great chart of the inputs and returns for this function. I highly recommend if you are still struggling or want to see every line of prcessing written out.
+
+Now that we have found all the permutations of any given string, we can start to look at finding all combinations of a string. The two will set us up nicely for the game challenge as we progress. Remember to check back for the rest of the [Strings and Things](https://sjcswank.github.io/Stings-and-Things/) solutions soon. For now, pat yourself on the back- this post covers some heavy material and you made all the way through!
+
+
