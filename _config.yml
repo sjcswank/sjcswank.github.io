@@ -4,6 +4,7 @@ description: Developer in Development
 show_downloads: false
 google_analytics:
 theme: jekyll-theme-minimal
+timezone: 'America/Chicago'
 #
 # !! You don't need to change any of the configuration flags below !!
 #
