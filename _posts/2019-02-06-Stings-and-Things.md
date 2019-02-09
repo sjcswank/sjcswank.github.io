@@ -6,17 +6,17 @@ When I was first starting out in programming, one of the first things I learned 
 There are some great tutorials out there already, so I won't try to reinvent the wheel. Instead here is a list of some of the ones I found most helpful:
 
 **[ToutorialsPoint- Strings](https://www.tutorialspoint.com/computer_programming/computer_programming_strings.htm)**
-TutorialsPoint is one of my all time favorite tutorials websites. Their tutorials are always easy to follow and indepth enough without being too heavy. This tutorial goes through the basics of what a string actually is, through some of the basic concepts when using strings, through how to create stings in Java and Python. It's a great starting point. 
+TutorialsPoint is one of my all time favorite tutorials websites. Their tutorials are always easy to follow and indepth enough without being too heavy. This tutorial goes through the basics of what a string actually is, some of the basic concepts when using strings, and how to create stings in Java and Python. It's a great starting point. 
 
 **[W3Schools- Java Strings](https://www.w3schools.com/java/java_strings.asp)**
 W3Schools is another go-to for me. Like TutorialsPoint, their wording is easy to follow and covers just enough material. They also add a lot of examples of actual code. Always a great resource.
 
 **[Oracle's Java Docmentation- Strings](https://docs.oracle.com/javase/tutorial/java/data/strings.html)**
-Documentation is always the best place for learning any language, but they can be a little hard to get used to. The Java Documentation on Strings is certainly indepth, and provides plenty of code examples, but is a little clunky to read. I reccomend getting used to documention as early as possible in your programming journey. It'll be unendingly helpful at allstages of your learning. 
+Documentation is always the best place for learning any language, but they can be a little hard to get used to. The Java Documentation on Strings is certainly indepth, and provides plenty of code examples, but is a little clunky to read. I reccomend getting used to documention as early as possible in your programming journey. It'll be unendingly helpful at all stages of your learning. 
 
 **Expanding on Your Knowledge**
 
-Once you have a good understanding of strings, and the functions that go with them, try your hand at these exercises. I wrote up these exercises for a Java development course I was a TA for. The students who were a bove the curve, like I know all of us can be, got lessons that expanded on the material. 
+Once you have a good understanding of strings, and the functions that go with them, try your hand at these exercises. I wrote up these exercises for a Java development course I was a TA for. The students who were above the curve, like I know all of us can be, got lessons that expanded on the material. 
 
 The following challenges extend on your knowledge of dictionaries and lists, iteration over strings, and regex, all important features of building accurate and efficient string functions. These challenges build on each other and I recommend you complete them in order- BUT if as you read through them one challenge jumps out at you or you think you can solve it easily, start there! Sometimes it is best to start with the easiest work first.
 
@@ -25,7 +25,7 @@ The following challenges extend on your knowledge of dictionaries and lists, ite
 - Put the previous two functions together and write a function that will take in a string and output all possible character combinations and their permutations from that string. Now, "ABC" would give: "AB, AC, BA, BC, CA, CB, ABC, ACB, BCA, BAC, CAB, CBA". 
 - Write a function that compares a string to rules for the structure of a word. This function should include at least one regex (regular expression) that defines a valid word. I suggest you keep this limited for now, but a word must have at least one vowel and must be only alpha characters!
 - Write a function that will compare a valid word to a list of known words.
-- Write a function that will take in a single word string and tell the user why it is not valid. For example, if a user inputs “bth” the function should print “there is no vowel in this string”. If a user puts in “laughst” perhaps the function prints “there are more than three consonants in a row in this string!” Remember to limit your possible returns to the requirements of your regex.
+- Write a function that will take in a single word string and tell the user why it is not valid. For example, if a user inputs “bth” the function should print “there is no vowel in this string”. If a user puts in “laughst” perhaps the function prints “there are more than three consonants in a row in this string!” Remember to limit your possible returns to the requirements of your regex from exercise 4.
 - Write a function that will take in a string and add it to a list of known valid words.
 - Write a function that will take in a single word string and return a list of all valid words that can be made from that string. 
 - Extend that function to add all valid words to a list of known valid words.
