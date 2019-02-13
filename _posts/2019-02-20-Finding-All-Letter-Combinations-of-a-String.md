@@ -7,7 +7,7 @@ Once you find all the combinations of the letters of the word, you can scramble 
 
 I have a touch of education in logic and discreet math so when I approached the permutations of a word I immediately understood the theory behind the problem- I'd done the same thing in college already. Putting the math into code was the only challenge. However, I hadn't seen something like this in college. I didn't already have the theory, or the math, to start me out. So. I needed some pseudo code. 
 
-If you aren't familiar, pseudo code lets you write out each step your code will have to take in plain english. This allows you to think through each step and create a plan for your code without having to know the exact syntax you will use in the final code. It's a great srting point for any peice of code, especially when you don't really know what you need to do yet.
+If you aren't familiar, pseudo code lets you write out each step your code will have to take in plain english. This allows you to think through each step and create a plan for your code without having to know the exact syntax you will use in the final code. It's a great starting point for any piece of code, especially when you don't really know what you need to do yet.
 
 My peudo code ended up looking something like this:
 - Starting at the begining of the input string
@@ -69,7 +69,7 @@ Since, when we end our looping, our output includes all letters, it would be con
       	}
     }
     
-Lastly, where so we run our recursion? Right now, the code will only run up the string and print out each letter by it's self. We need it to continue, after printing the letter by itself, up the rest of the string adding to the output. So our recursion should be after we print, but before we reset our output string.
+Lastly, where so we run our recursion? Right now, the code will only run up the string and print out each letter by itself. We need it to continue, after printing the letter by itself, up the rest of the string adding to the output. So our recursion should be after we print, but before we reset our output string.
 
 	public static void allCombinations(String input, int start){
     	
