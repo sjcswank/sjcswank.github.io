@@ -1,5 +1,6 @@
 ---
 published: true
+tags: strings java code walkthrough
 ---
 In my [previous post](https://sjcswank.github.io/Stings-and-Things/) I presented a series of exercises, culminating in a challenge to create a text based game. I promised I would come back with some of the solutions to those exercises, and so, here I am. Today I'm going to tackle the second exercise, which is about permutations of characters in a string.
 
