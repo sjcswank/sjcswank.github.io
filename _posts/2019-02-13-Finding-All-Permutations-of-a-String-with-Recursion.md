@@ -123,7 +123,7 @@ We now know how to find the _number_ of permutations, next we can use this knowl
 
 **A Function that finds All Permutations of a String**
 
-    private static void AllPermutation(String permutation, String input)
+    private static void AllPermutations(String permutation, String input)
     {    
         if(input.length() == 0)
         {
@@ -140,7 +140,7 @@ We now know how to find the _number_ of permutations, next we can use this knowl
 
 Let's walkthrough this one concept at a time again:
 
-    private static void AllPermutation(String permutation, String input)
+    private static void AllPermutations(String permutation, String input)
     {   
     
 **If there are no letters remaining, stop and print**
