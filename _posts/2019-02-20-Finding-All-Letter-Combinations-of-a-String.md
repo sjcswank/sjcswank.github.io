@@ -56,14 +56,14 @@ Next we need to start again with the first and second letter as the begining out
 
 Like with the permutations, since we need to repeat code we already wrote, we probably want to use recursion here. Here's where I got tripped up. How do I tell the recursion where to start and what letter combinations to keep? We dont want to start over at the first letter, we want to start with the first _and second_ letters. It might be time to rethink our output string.
 
-Since, when we end our looping, our output includes all letters, it would be convient if we could just tell our new output to set itself to the first two letters before starting the loop again. We can't do that with a String object, though. We _can_ do it with a StringBuilder object. We can add letters to a StringBuilder object, we can cut a StringBuilder object to a certain length, and we can start a StringBuilder object with no characters. Perfect, that's everything we need from our output.
+Since, when we end our looping, our output includes all letters, it would be convient if we could just tell our new output to set itself to the first two letters before starting the loop again. We can't do that with a String object, though. We _can_ do it with a StringBuilder object. We can append letters to the end of a StringBuilder object, we can cut a StringBuilder object to a certain length, and we can start a StringBuilder object with no characters. Perfect, that's everything we need from our output.
 
-	public static void allCombinations(String input, int start){
-    	
-    	private StringBuilder output = new StringBuilder();
-        
+If we include the StringBuilder in our function, though, each recursion will recreate the StringBuilder. We don't want that- it would mean that for each turn of the loop we would start with a new, or blank, StringBuilder. To solve this issue we pass the StringBuilder as a parameter to the function.
+
+	public static void allCombinations(String input, int start, StringBuilder output){
+    
       	for(int i = start; i < input.length(); ++i){
-          output = output + input.charAt(i);
+          output = output.append(input.charAt(i));
           System.out.println(output);
           output.setLength( output.length() - 1 );
       	}
@@ -71,16 +71,14 @@ Since, when we end our looping, our output includes all letters, it would be con
     
 Lastly, where so we run our recursion? Right now, the code will only run up the string and print out each letter by itself. We need it to continue, after printing the letter by itself, up the rest of the string adding to the output. So our recursion should be after we print, but before we reset our output string.
 
-	public static void allCombinations(String input, int start){
-    	
-    	private StringBuilder output = new StringBuilder();
+	public static void allCombinations(String input, int start, StringBuilder output){
         
       	for(int i = start; i < input.length(); ++i){
-          output = output + input.charAt(i);
+          output = output.append(input.charAt(i));
           System.out.println(output);
           if (i < input.length())
-    			combine( i + 1);
-          output.setLength(output.length() - 1);
+    			allCombinations(input, i + 1);
+          output.setLength( output.length() - 1 );
       	}
     }
 
