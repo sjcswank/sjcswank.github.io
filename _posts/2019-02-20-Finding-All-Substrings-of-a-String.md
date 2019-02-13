@@ -44,7 +44,7 @@ This let me break the code apart into distinct steps and variables. For variable
 
 Next we need to start again with the first and second letter as the begining output string and repeat. We need to be able to tell our loop where to start looping now. Time to turn this into a function. 
 
-	public static void allCombinations(String input, int start){
+	public static void AllCombinations(String input, int start){
       String output = null;
 
       for(int i = start; i < input.length(); ++i){
@@ -60,7 +60,7 @@ Since, when we end our looping, our output includes all letters, it would be con
 
 If we include the StringBuilder in our function, though, each recursion will recreate the StringBuilder. We don't want that- it would mean that for each turn of the loop we would start with a new, or blank, StringBuilder. To solve this issue we pass the StringBuilder as a parameter to the function.
 
-	public static void allCombinations(String input, int start, StringBuilder output){
+	public static void AllCombinations(String input, int start, StringBuilder output){
     
       	for(int i = start; i < input.length(); ++i){
           output = output.append(input.charAt(i));
@@ -71,7 +71,7 @@ If we include the StringBuilder in our function, though, each recursion will rec
     
 Lastly, where so we run our recursion? Right now, the code will only run up the string and print out each letter by itself. We need it to continue, after printing the letter by itself, up the rest of the string adding to the output. So our recursion should be after we print, but before we reset our output string.
 
-	public static void allCombinations(String input, int start, StringBuilder output){
+	public static void AllCombinations(String input, int start, StringBuilder output){
         
       	for(int i = start; i < input.length(); ++i){
           output = output.append(input.charAt(i));
