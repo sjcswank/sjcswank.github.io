@@ -6,6 +6,8 @@ tags: jekyll blogging coding-journey
 ---
 I've been looking to start a blog to document my code-learning journey for a few months now. Like many of us just starting out, I've seen time and time again the importance of maintaining an online presence when trying to leap into the programing world. This is not particularly natural for me. My online life has always been rather private. So, a new blog seemed to be the easiest solution.  
 
+<!-- more -->
+
 Well, "easy" may not be the best word for it. There were so many questions that needed answering that I didn't even know to ask. I did know I didn't want to host my blog on Wordpress but I didn't even know what other options were out there! Did I want to build my own blog? As a budding web developer it felt like cheating to use a platform I had no control over. Should I build something from scratch, use somekind of service? Where would I host this blog? So. Many. Questions.
 
 My first instinct was to use what I already know. The last time I had a blog it was on LiveJournal, so I don't know much in the modern world. I do, however, know GitHub. And I know GitHub Pages. So I asked myself, is there a way I could create a blog using GitHub Pages? I could build my own blog without having to worry about things like paying to host it, or connecting to servers, or buying a domain name. What's better, I quickly learned, is that GitHub provides everything you need to get a blog going on their site! Perfect.
