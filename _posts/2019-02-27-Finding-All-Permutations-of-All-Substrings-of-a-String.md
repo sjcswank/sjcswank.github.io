@@ -37,7 +37,7 @@ If you're just joining us, click those links to check out the full walk-thru of 
 
 The refactoring is fairly easy to define- we need to have the functions return a list of it's results, instead of just printing them. Implimenting this in code is pretty easy for AllCombinations. So let's look at that first.
 
-AllCombinations now needs to return a list of all substrings of the input. Like we discussed with the StringBuilder in the same function, if we declare this list in the function we will reset the list with each recursion, so we'll pass the list as a parameter instead. Lastly, where we would have printed the output before, we now need to ass the output to a list. If we use a String Array List to hold the results, we can just add the StringBuilder as a string to the list. 
+AllCombinations now needs to return a list of all substrings of the input. Like we discussed with the StringBuilder in the same function, if we declare this list in the function we will reset the list with each recursion, so we'll pass the list as a parameter instead. Lastly, where we would have printed the output before, we now need to assign the output to a list. If we use a String Array List to hold the results, we can just add the StringBuilder as a string to the list. 
 
 	public static ArrayList<String> AllCombinations(String input, int start, StringBuilder output, ArrayList<String> results){
     	
@@ -80,7 +80,7 @@ Now, let's try to combine these two functions in one new function that will do b
 
 There are a couple of things to keep in mind as we write up this function. First, AllCombinations will take in an empty ArrayList for it's results. This ArrayList will NOT be empty after we run the AllCombinations function. When AllPermutations needs an empty ArrayList we'll have to create a new one.
 
-Second, if an ArrayList needs to be empty, we had beeter make sure it stays that way. If we pass an array list that isn't empty we could find ourselves iterating over hundreds of entries. Even worse, the loop may never end if it is always adding entries to what should be an empty list. So we should remember to clear any ArrayList that should be empty after we use it.
+Second, if an ArrayList needs to be empty, we had better make sure it stays that way. If we pass an array list that isn't empty we could find ourselves iterating over hundreds of entries. Even worse, the loop may never end if it is always adding entries to what should be an empty list. So we should remember to clear any ArrayList that should be empty after we use it.
 
 Lastly, we need to use unique names for the values we pass to the functions. When creating our functions we used names like input in both functions. That's fine in the definitions, but when we want to use them we can't have the inputs for both functions named input because they need to be differnt values.
 
@@ -112,7 +112,7 @@ Results for input "ABCD" should look like:
     CAD, CDA, DAC, DCA, AD, DA, B, BC, CB, BCD, BDC, CBD, CDB, DBC, DCB, BD, DB, C,
     CD, DC, D
     
-That's a lot of results for four little letters. Remember, the results are every possible combination, in every possible order from the given input. A large word could easily give hundreds of results. This calls in some question about if our function is as efficient as it would need to be in practice. Honestly, I don't know. I know it works and it makes sense. In the future I may research some other solutions to this problem and see if I can find something more efficient. 
+That's a lot of results for four little letters. Remember, the results are every possible combination, in every possible order from the given input. A large word could easily give hundreds of results. This calls in some questions about if our function is as efficient as it would need to be in practice. Honestly, I don't know. I know it works and it makes sense. In the future I may research some other solutions to this problem and see if I can find something more efficient. 
 
 For now, I'm going to congratulate myself on some coding completed. And you should congratulate yourself, too, for getting this far. We are all one step closer to a word game. Go us!
 
