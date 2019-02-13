@@ -14,46 +14,76 @@ My peudo code ended up looking something like this:
 - Add first letter to an output string and print
 - add next letter to the output string and print
 - continue to end of string
+	- begin at first and second letter 
+	- skip one letter and add next letter to the output string and print
+	- continue to end of string
+		- begin at first and third letter 
+		- skip one letter and add next letter to the output string and print
+		- continue to end of string
+        	- etc.
 - Start again at the second letter of the string
-- Continue pattern to end of string
+	- begin at second and third letter 
+	- skip one letter and add next letter to the output string and print
+	- continue to end of string
+    	- etc.
+- Continue to end of string
+
 
 This let me break the code apart into distinct steps and variables. For variables, my peudo code mentions an input string and an output string. The pseudo code also mentions looping through the letters of the input string. Since we will need to know where in the string we started each time, it makes the most sense to use a for loop with a built in index. Now we can start writing our real code.
 
 	String input;
-    String output = "";
+    String output = null;
     
     for(int i = 0; i < input.length(); ++i){
     	output = output + input.charAt(i);
         System.out.printline(output)
     }
 
-Next we need to start again at letter 2. To accomplish this I wrapped the whole thing in another for loop. I set the index of the inside loop to that of the outside loop so that when we reach the end of the string and start again, we could start at the next letter. Then I refactored the index variables to follow coding standards. All that left me with:
 
-	for(int i = 0; i < input.length(); ++i){
-		    for(int j = i; j < input.length(); ++j){
-		    	output = output + input.charAt(j);
-		        System.out.println(output);
-		    }
-	    	output = "";
-		}
 
-Once I tested that code, I wrapped the whole thing in a function that passes the input string as a parameter: 
 
-    public static void allCombinations(String input){
+Next we need to start again with the first and second letter as the begining output string and repeat. We need to be able to tell our loop where to start looping now. Time to turn this into a function. 
 
-    	String output = "";
+	public static void allCombinations(String input, int start){
+      String output = null;
 
-    	for(int i = 0; i < input.length(); ++i){
-    		for(int j = i; j < input.length(); ++j){
-    			output = output + input.charAt(j);
-    			System.out.println(output);
-    		}
-    		output = "";
-    	}
+      for(int i = start; i < input.length(); ++i){
+          output = output + input.charAt(i);
+          System.out.printline(output)
+      }
+    }
+
+
+Like with the permutations, since we need to repeat code we already wrote, we probably want to use recursion here. Here's where I got tripped up. How do I tell the recursion where to start and what letter combinations to keep? We dont want to start over at the first letter, we want to start with the first _and second_ letters. It might be time to rethink our output string.
+
+Since, when we end our looping, our output includes all letters, it would be convient if we could just tell our new output to set itself to the first two letters before starting the loop again. We can't do that with a String object, though. We _can_ do it with a StringBuilder object. We can add letters to a StringBuilder object, we can cut a StringBuilder object to a certain length, and we can start a StringBuilder object with no characters. Perfect, that's everything we need from our output.
+
+	public static void allCombinations(String input, int start){
+    	
+    	private StringBuilder output = new StringBuilder();
+        
+      	for(int i = start; i < input.length(); ++i){
+          output = output + input.charAt(i);
+          System.out.printline(output);
+          output.setLength( output.length() - 1 );
+      	}
     }
     
-Again I tested my code and made sure everything was still working as it should. Once everything was varified I raised one hand above my head, bent it at the elbow, and gave myself a little pat on the back for completing the code. You should do that, too. Right now.
+Lastly, where so we run our recursion? Right now, the code will only run up the string and print out each letter by it's self. We need it to continue, after printing the letter by itself, up the rest of the string adding to the output. So our recursion should be after we print, but before we reset our output string.
 
-This is not the only way to solve this problem. I don't even know if this is a particcularly good way to solve this problem. this is just how _I_ solved the problem. Right now, I'm ok with that. At a later date I may return and see iff I can compare to [this solution](https://javahungry.blogspot.com/2014/02/algorithm-for-combinations-of-string-java-code-with-example.html) for efficiancy. Right now, I'm just happy to be one step closer to a word game. Make your way back here to see the next steps in that process next week!
+	public static void allCombinations(String input, int start){
+    	
+    	private StringBuilder output = new StringBuilder();
+        
+      	for(int i = start; i < input.length(); ++i){
+          output = output + input.charAt(i);
+          System.out.printline(output);
+          if (i < inputstring.length())
+    			combine( i + 1);
+          output.setLength( output.length() - 1 );
+      	}
+    }
+
+This is not the only way to solve this problem. I don't even know if this is a particcularly good way to solve this problem. This is just _one way_ to solve the problem. Right now, I'm ok with that. While doing research on this problem I found lots of other ways to solve this. I did notice that many of them did not include _all_ the combinations. For example, in [these solutions](https://www.geeksforgeeks.org/program-print-substrings-given-string/) the result "AC" is never produced. I might, at a later date, compair this solution with others online for efficiancy and completeness.  Right now, I'm just happy to be one step closer to a word game. Make your way back here to see the next steps in that process next week!
 
 Thanks for reading and Happy Coding!
