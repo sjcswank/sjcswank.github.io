@@ -5,7 +5,7 @@ When I challenged my students to create a console word game one of the bigest ch
 
 Once you find all the combinations of the letters of the word, you can scramble those combinations and compare each permutation against the rules of a valid word. Seemed easy enough. Finding all the letter combinations proved not to be so easy for me. 
 
-I have a touch of education in logic and discreet math so when I approached the permutations of a word I immediately understood the theory behind the problem- I'd done the same thing in college already. Putting the math into code was the only challenge. However, I hadn't seen something like this in college. I didn't already have the theory, or the math, to start me out. So. I needed some pseudo code. 
+I have a touch of education in logic and discreet math so when I approached the permutations of a word I immediately understood the theory behind the problem- I'd done the same thing in college already. Putting the math into code was the only challenge. However, I hadn't seen something like finding substrings in college. I didn't already have the theory, or the math, to start me out. So. I needed some pseudo code. 
 
 If you aren't familiar, pseudo code lets you write out each step your code will have to take in plain english. This allows you to think through each step and create a plan for your code without having to know the exact syntax you will use in the final code. It's a great starting point for any piece of code, especially when you don't really know what you need to do yet.
 
