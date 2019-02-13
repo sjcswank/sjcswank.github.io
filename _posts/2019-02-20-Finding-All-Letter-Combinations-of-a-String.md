@@ -36,7 +36,7 @@ This let me break the code apart into distinct steps and variables. For variable
     
     for(int i = 0; i < input.length(); ++i){
     	output = output + input.charAt(i);
-        System.out.printline(output)
+        System.out.println(output)
     }
 
 
@@ -49,7 +49,7 @@ Next we need to start again with the first and second letter as the begining out
 
       for(int i = start; i < input.length(); ++i){
           output = output + input.charAt(i);
-          System.out.printline(output)
+          System.out.println(output)
       }
     }
 
@@ -64,7 +64,7 @@ Since, when we end our looping, our output includes all letters, it would be con
         
       	for(int i = start; i < input.length(); ++i){
           output = output + input.charAt(i);
-          System.out.printline(output);
+          System.out.println(output);
           output.setLength( output.length() - 1 );
       	}
     }
@@ -77,10 +77,10 @@ Lastly, where so we run our recursion? Right now, the code will only run up the 
         
       	for(int i = start; i < input.length(); ++i){
           output = output + input.charAt(i);
-          System.out.printline(output);
-          if (i < inputstring.length())
+          System.out.println(output);
+          if (i < input.length())
     			combine( i + 1);
-          output.setLength( output.length() - 1 );
+          output.setLength(output.length() - 1);
       	}
     }
 
