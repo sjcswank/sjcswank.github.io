@@ -5,11 +5,11 @@ layout: post
 ---
 In my [previous post](https://sjcswank.github.io/Stings-and-Things/) I presented a series of exercises, culminating in a challenge to create a text based game. I promised I would come back with some of the solutions to those exercises, and so, here I am. Today I'm going to tackle the second exercise, which is about permutations of characters in a string.
 
-<!-- more -->
-
 - Write a function that outputs all possible permutations of a string. For example, the string “AB” would out put both “AB” and “BA”.
 
 Ok, let's get started!
+
+<!-- more -->
 
 **All Permutations of a String**
 
