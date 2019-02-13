@@ -1,5 +1,6 @@
 ---
 published: false
+tags: strings java code walkthrough
 ---
 When I challenged my students to create a console word game one of the bigest challenges for them was finding all the valid words of a given string. I'm sure there are many ways to do this, as in most things programming. My approached followed the logic that finding all the possible words would be easiest if you broke the word into all possible combinations first. Well, determining what constitutes a valid words would be first on my to-do list, but after that, I'd break the word apart into combinations. 
 
