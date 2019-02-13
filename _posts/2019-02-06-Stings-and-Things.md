@@ -5,6 +5,8 @@ layout: post
 ---
 When I was first starting out in programming, one of the first things I learned was how to minipulate and search through strings. Algorithms that manipulate strings are pretty ubiquitous throughout all levels of programming. I'm going to go over some of the great tutorials out there on strings, mostly focusing on Java. Then, I'm going to give you a taste of the extra credit work I put together for my students when I was a TA. Let's have some fun with strings and things.
 
+<!-- more -->
+
 There are some great tutorials out there already, so I won't try to reinvent the wheel. Instead here is a list of some of the ones I found most helpful:
 
 **[ToutorialsPoint- Strings](https://www.tutorialspoint.com/computer_programming/computer_programming_strings.htm)**
