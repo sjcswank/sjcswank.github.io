@@ -9,7 +9,7 @@ published: true
 
 * content
 {:toc}
-<img style="float: right;" src="_images/icon.jpg">
+<img style="float: right;" src="_images/icon.jpg" />
 ## About ME
 
 I'm a 33 year old woman with one cat, four neices and nephews, and one great big desire to break into a programming career.
