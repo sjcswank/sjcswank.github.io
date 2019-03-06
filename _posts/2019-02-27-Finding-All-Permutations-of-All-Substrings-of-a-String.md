@@ -6,7 +6,7 @@ Now that we have found [all the substrings](https://sjcswank.github.io/Finding-A
 
 <!-- more -->
 
-###[Finding All Substrings](https://sjcswank.github.io/Finding-All-Substrings-of-a-String/)
+***[Finding All Substrings](https://sjcswank.github.io/Finding-All-Substrings-of-a-String/)***
 
 	public static void AllCombinations(String input, int start, StringBuilder output){
         
@@ -19,7 +19,7 @@ Now that we have found [all the substrings](https://sjcswank.github.io/Finding-A
       	}
     }
     
-###[Finding All Permutations](https://sjcswank.github.io/Finding-All-Permutations-of-a-String-with-Recursion/)
+***[Finding All Permutations](https://sjcswank.github.io/Finding-All-Permutations-of-a-String-with-Recursion/)***
 
     private static void AllPermutations(String permutation, String input)
     {    
