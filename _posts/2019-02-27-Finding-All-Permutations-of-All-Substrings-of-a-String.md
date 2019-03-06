@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 tags: strings java code walkthrough
 ---
 Now that we have found [all the substrings](https://sjcswank.github.io/Finding-All-Substrings-of-a-String/) and [all the permutations](https://sjcswank.github.io/Finding-All-Permutations-of-a-String-with-Recursion/) of a string we can put them together and find all possible words from a string. That means all permutations of all substrings of the starting string. Let's review our previous two functions.
