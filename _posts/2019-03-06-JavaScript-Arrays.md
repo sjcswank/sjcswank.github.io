@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 tags: 'javascript, coding-journey'
 ---
 I've been interviewing recently for positions as a Junior Developer and in every interview I've been asked the same question: what experience with JavaScript and React.JS do you have? Every time I have to be honest, and every time I feel it hurts my chances of getting hired. I have basically no experience with either, but I'm happy and able to learn anything you throw at me. I feel the reassurance that I can and will learn it just isn't enough. So, it's time I take a break from working on my other projects and start learning some JavaScript.
