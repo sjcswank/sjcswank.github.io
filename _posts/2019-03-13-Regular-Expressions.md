@@ -6,7 +6,7 @@ Regular Expressions are a pain. Truly, a royal pain. They aren’t easily readab
 
 I actually *don’t* hate regular expressions. Yes, RegEx can be a pain. Yes, RegEx can be confusing. No, I cannot write regular expressions off the top of my head. All of that just adds up to a challenge and I feel a great satisfaction when I beat it. When I write an expression and it *works*, man, I love it. Which is good, because I can’t make the game I have written up in the [Strings and Things Challenge]( https://sjcswank.github.io/2019/02/06/Stings-and-Things/) without them.
 
-< more>
+<!-- more -->
 
 Well, actually, I’m sure there is a way to create this game without ever having to use regular expressions. There’s always another way to do it in programming. This just happens to be the way that I figured out, the way that makes sense to me. If we think of another way to get the same or similar result, please let me know because, as I said above, people really tend to hate RegEx. This challenge is supposed to be fun, not torture.
 
