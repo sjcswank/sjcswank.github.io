@@ -1,5 +1,6 @@
 ---
 published: true
+tags: 'javascript, coding-journey, walkthrough'
 ---
 So, it's been a crazy month and I haven't had the chance to get on here and give you guys an update recently. There were doctors and dogs and Dungeons and Dragons games. It was interesting, and stressful, to say the least. I did manage to keep coding while I was gone, though.
 
