@@ -38,10 +38,11 @@ In the JavaScript you can find an element by it's id, which is always unique to 
     var input = document.getElementById("new");
 	var btnAdd = document.getElementById("btnAdd");
 	var list = document.getElementById("list");
+    var id = 1;
     
 To add an item to the to-do list, once the add button has been clicked, I needed to create an html element with the value of the input included and then tack it on to the current unordered list. I also had to verify that the input is actually there and I'm not creating a blank item. The first step is to figure out when the button has been clicked.
 
-In JavaScript there is a function that picks up when the user interacts with an element on the webpage called an add event listener. An action and a function to call are passed as paramaters to the creating function. for the add button, the action I am looking for is a click, and the function to call is the function I wrote to add an item to the list. Once the event listener was added I could move on to writing the actual function to add the list item.
+In JavaScript there is a function that picks up when the user interacts with an element on the webpage called an event listener. An action and a function to call are passed as paramaters to the creating function. For the add button, the action I am looking for is a click, and the function to call is the function I wrote to add an item to the list. Once the event listener was added I could move on to writing the actual function to add the list item.
 	
     //add event listener to btnAdd
 	btnAdd.addEventListener("click", addTodoListItem);
@@ -80,8 +81,8 @@ The second part of the list functionality is being able to check off items on th
 		}
 	}
 
-Once those two functions were completed I decided to call it quits for the night. I intend to add more functionality to this as I practice more JavaScript. I also intend to make it look a little better as I go. For now, it works. I can add an item, I can see what items I've done. As a person who struggles with anxiety and depression, it's good for me to see a list of things I have accomplished ao I don't need to be able to remove things. Yet. 
+Once those two functions were completed I decided to call it quits for the night. I intend to add more functionality to this as I practice more JavaScript. I also intend to make it look a little better as I go. For now, it works. I can add an item, I can see what items I've done. There is something just so satisfying about seeing what you've checked off your list. I'm not concerned with removing those items yet, because I want to see them! Next, though, I'll add that functionality to keep things from getting messy or overwhelming. 
 
-I'll come back with more about this to-do list when I update it again. Should be fairly soon. I haven't forgottwn about the Strings and Things challenge, either! More solutions for that are coming soon as well! Until then,
+I'll come back with more about this to-do list when I update it again. Should be fairly soon. I haven't forgotten about the Strings and Things challenge, either! More solutions for that are coming soon as well! Until then,
 
 Thanks for reading, and Happy Coding!
